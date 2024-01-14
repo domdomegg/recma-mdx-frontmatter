@@ -1,6 +1,6 @@
 {
   "name": "recma-mdx-frontmatter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Recma plugin to add frontmatter data as a property to MDX components",
   "license": "MIT",
   "author": "Adam Jones (domdomegg)",
