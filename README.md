@@ -59,7 +59,7 @@ export default function App({ Component, pageProps }: AppProps) {
 }
 ```
 
-Only some of your pages use MDX and want to use different layouts for non-MDX pages? Try [https://github.com/domdomegg/recma-mdx-displayname](recma-mdx-displayname).
+Only some of your pages use MDX and want to use different layouts for non-MDX pages? Try [recma-mdx-displayname](https://github.com/domdomegg/recma-mdx-displayname).
 
 ## Contributing
 
