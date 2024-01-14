@@ -1,0 +1,46 @@
+{
+  "name": "recma-mdx-frontmatter",
+  "version": "0.0.1",
+  "description": "Recma plugin to add frontmatter data as a property to MDX components",
+  "license": "MIT",
+  "author": "Adam Jones (domdomegg)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/domdomegg/recma-mdx-frontmatter.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pretest": "npm run build",
+    "prelint": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest --watch",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "clean": "rm -rf dist",
+    "build": "tsc --project tsconfig.build.json",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "@mdx-js/mdx": "^2.2.1",
+    "@tsconfig/node-lts": "^20.1.1",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/estree": "^1.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-domdomegg": "^1.2.3",
+    "typescript": "^5.3.3",
+    "unified": "^10.1.2",
+    "vfile": "^5.3.6",
+    "vitest": "^1.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-domdomegg"
+    ]
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3"
+  }
+}
