@@ -23,6 +23,10 @@
     "build": "tsc --project tsconfig.build.json",
     "prepublishOnly": "npm run clean && npm run build"
   },
+  "dependencies": {
+    "estree-util-value-to-estree-cjs": "^3.0.1",
+    "gray-matter": "^4.0.3"
+  },
   "devDependencies": {
     "@mdx-js/mdx": "^2.2.1",
     "@tsconfig/node-lts": "^20.1.1",
@@ -39,8 +43,5 @@
     "extends": [
       "eslint-config-domdomegg"
     ]
-  },
-  "dependencies": {
-    "gray-matter": "^4.0.3"
   }
 }
